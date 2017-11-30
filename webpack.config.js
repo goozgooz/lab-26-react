@@ -4,7 +4,7 @@ const HTMLPlugin = require('html-webpack-plugin');
 const ExtractPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: `${__dirname}/src/main/js`,
+  entry: `${__dirname}/src/main.js`,
   devtool: 'cheap-eval-source-map',
   // bundle output
   output: {
