@@ -18,7 +18,7 @@ module.exports = {
     new ExtractPlugin('bundle.[hash].css'),
   ],
 
-  modules: {
+  module: {
     // loaders
     rules: [
       {
