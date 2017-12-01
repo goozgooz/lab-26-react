@@ -22,10 +22,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id='moo'>
         <Header />
         <button onClick={this.handleCow}> click me </button>
-        <pre className='cow'> {say({text: this.state.content})} </pre>
+        <pre>{say({text: this.state.content})}</pre>
       </div>
     )
   }
