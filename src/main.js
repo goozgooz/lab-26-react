@@ -10,7 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
       this.state = {
-        content: 'mooooo',
+        content: 'click the button!',
       }
     
     this.handleCow = this.handleCow.bind(this);
