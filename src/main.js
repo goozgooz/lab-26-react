@@ -25,7 +25,7 @@ class App extends React.Component {
       <div>
         <Header />
         <button onClick={this.handleCow}> click me </button>
-        <div className='cow'> {say({text: this.state.content})} </div>
+        <pre className='cow'> {say({text: this.state.content})} </pre>
       </div>
     )
   }
