@@ -17,16 +17,24 @@ class App extends React.Component {
   };
 
   handleCow () {
-    this.setState({content: faker.company.bsBuzz()});
+    this.setState({content: faker.lorem.words(3)});
   };
 
   render() {
     return (
       <div>
-        <h1>Hello Peeps</h1>
+        <Header />
         <button onClick={this.handleCow}> click me </button>
         <div className='cow'> {say({text: this.state.content})} </div>
       </div>
+    )
+  }
+}
+
+class Header extends React.Component {
+  render() {
+    return (
+      <h1> Generate Cowsay Lorem </h1>
     )
   }
 }
